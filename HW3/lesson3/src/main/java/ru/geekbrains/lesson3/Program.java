@@ -1,7 +1,6 @@
 package ru.geekbrains.lesson3;
 
-import java.lang.annotation.ElementType;
-import java.util.ArrayList;
+
 import java.util.Iterator;
 
 public class Program {
@@ -28,30 +27,30 @@ public class Program {
 
         System.out.println(linkedList1);
 
-        linkedList1.sort(new EmployeeComparator(SortType.Ascending));
+        linkedList1.reverse();
 
         System.out.println();
         System.out.println(linkedList1);
 
-        linkedList1.sort(new EmployeeComparator(SortType.Descending));
+        // linkedList1.sort(new EmployeeComparator(SortType.Descending));
 
-        System.out.println();
-        System.out.println(linkedList1);
+        // System.out.println();
+        // System.out.println(linkedList1);
 
-        LinkedList<Employee>.Node resNode = linkedList1.contains(searchEmployee);
-        if (resNode != null){
-            System.out.println("Элемент найден");
-            System.out.println(resNode.value);
-        }
-        else {
-            System.out.println("Элемент не найден");
-        }
+        // LinkedList<Employee>.Node resNode = linkedList1.contains(searchEmployee);
+        // if (resNode != null){
+        //     System.out.println("Элемент найден");
+        //     System.out.println(resNode.value);
+        // }
+        // else {
+        //     System.out.println("Элемент не найден");
+        // }
 
-        linkedList1.removeFirst();
-        linkedList1.removeLast();
+        // linkedList1.removeFirst();
+        // linkedList1.removeLast();
 
-        System.out.println();
-        System.out.println(linkedList1);
+        // System.out.println();
+        // System.out.println(linkedList1);
 
     }
 

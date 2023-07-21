@@ -152,4 +152,27 @@ public class LinkedList<T> {
 
         return stringBuilder.toString();
     }
+
+    // Разворота связного списка
+    public void reverse()
+    {
+        // Проверка списка на наличие хотя бы одного элемента
+        if (head == null){
+            return;
+        }
+        Node previous = null;
+        Node current = head;
+
+        // обход списка
+        while (current != null)
+        {
+            Node next = current.next;
+            current.next = previous;    
+            previous = current;
+            current = next;
+        }
+
+        // фиксируем голову, чтобы она указывала на новый фронт
+        head = previous;
+    }
 }
